@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script src="https://kit.fontawesome.com/4b14829618.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue-carousel@0.18.0/dist/vue-carousel.min.js"></script>
+
+	<title>Carousel</title>
+
+</head>
+
+<body>
+	<div id="app">
+		<carousel :per-page="1">
+			<slide style="height: 250px;"><img class="w-100 h-100" style="object-fit: cover;"
+					src="https://cdn.pixabay.com/photo/2019/06/13/11/22/golden-gate-bridge-4271364_960_720.jpg" alt="">
+			</slide>
+			<slide style="height: 250px;"><img class="w-100 h-100" style="object-fit: cover;"
+					src="https://cdn.pixabay.com/photo/2020/10/11/09/04/peak-5645235_960_720.jpg" alt=""></slide>
+			<slide style="height: 250px;"><img class="w-100 h-100" style="object-fit: cover;"
+					src="https://cdn.pixabay.com/photo/2019/10/24/02/18/halloween-4573176_960_720.jpg" alt="">
+			</slide>
+			<slide style="height: 250px;"><img class="w-100 h-100" style="object-fit: cover;"
+					src="https://cdn.pixabay.com/photo/2020/05/29/06/42/cat-5233986_960_720.jpg" alt=""></slide>
+			<slide style="height: 250px;"><img class="w-100 h-100" style="object-fit: cover;"
+					src="https://cdn.pixabay.com/photo/2015/11/16/14/43/cat-1045782_960_720.jpg" alt=""></slide>
+		</carousel>
+	</div>
+
+	<script>
+		new Vue({
+			el: '#app',
+			components: {
+				'carousel': VueCarousel.Carousel,
+				'slide': VueCarousel.Slide
+			},
+		})
+	</script>
+</body>
+
+</html>
