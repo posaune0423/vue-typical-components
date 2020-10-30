@@ -1,6 +1,8 @@
 # vue-typical-components
 
 This repository is for collection of my vuejs components.
+Most of them are developed by vuejs cdn so you can easily reuse them for your own project !😀
+
 and below are some of my collections demos.
 
 
@@ -8,5 +10,6 @@ and below are some of my collections demos.
 ![](https://user-images.githubusercontent.com/49933188/97742471-ac1a2080-1b27-11eb-941c-4e10a468e9fd.gif)
 
 
+
 ## carousel
-![]()
+![](https://user-images.githubusercontent.com/49933188/97743304-cbfe1400-1b28-11eb-9202-a59ec20f3360.gif)
