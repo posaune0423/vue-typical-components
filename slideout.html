@@ -35,6 +35,8 @@
 
 <body>
   <div id="app">
+    
+    <!-- Slideout -->
     <div id="slideout-menu" class="fixed-top h-100 bg-white text-center" v-bind:class="{ open:isOpen }">
       <h3 class="pt-5 pb-5 text-secondery h5">App Name</h3>
       <ul class="list-unstyled">
@@ -44,18 +46,19 @@
         <li class="pt-2 pb-2 mt-4 mb-4"><a href="#" class="text-secondary text-decoration-none h5">List 4</a></li>
       </ul>
     </div>
+    
 
     <!-- Overlay -->
     <div class="overlay w-100 h-100 fixed-top" v-bind:class="{ 'd-none':!isOpen }" v-on:click='isOpen=!isOpen'></div>
 
-
+    
     <!-- Navbar -->
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">Navbar</a>
       <i class="fas fa-bars d-block d-sm-none h4" v-on:click='isOpen=!isOpen'></i>
     </nav>
 
-
+    
     <script>
       new Vue({
         el: '#app',
